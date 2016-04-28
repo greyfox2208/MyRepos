@@ -1,1 +1,7 @@
 This is text file 1
+
+IvanIvanov|-27|+7999000 1 1 11|example@@yandex..ru
+
+ValeraValera|-21|+7999000 1 1 11|example@@yandex..ru
+
+IvanValeriyich|27|+7999056 1 1 11|example@@yandex.ru

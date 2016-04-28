@@ -1,2 +1,1 @@
-This is text file 1 
-
+ Thisistextfile1 Ivan Ivanov|27|+7 (999) 000-11-11|example@yandex.ru Valera Valera|21|+7 (999) 000-11-11|example@yandex.ru Ivan Valeriyich|27|+7 (999) 056-11-11|example@yandex.ru
