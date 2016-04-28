@@ -18,14 +18,13 @@ public class Phonebook {
     private static final String PATH_WRITE = "D://text2.txt";
 
     public static void main(String args[]) {
-        System.out.println("Hello!");
+        System.out.println("Hi");
         String str = getTex(PATH_READ);
         System.out.println(str);
-        String str2 = getTex(PATH_WRITE);
-        System.out.println(str2);
-        writeText(PATH_WRITE, str);
-        str2 = getTex(PATH_WRITE);
-        System.out.println(str2);
+        String res;
+        res = changeText(str);
+        System.out.println(res);
+        writeText(PATH_WRITE, res);
     }
 
     private static String changeText(String str) {
