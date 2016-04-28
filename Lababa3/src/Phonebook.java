@@ -5,6 +5,15 @@ import java.io.*;
  */
 public class Phonebook {
 
+    private static final String[] pat = {
+            "\\s{1,}", "",
+            "@{2,}", "@",
+            "\\.{2,}", ".",
+            "-", "",
+            "(\\d)(\\d{2,3})(\\d{3})(\\d{2})(\\d{2})", "$1 ($2) $3-$4-$5",
+            "([A-Z])", " $1"
+    };
+
     private static final String PATH_READ = "D://text1.txt";
     private static final String PATH_WRITE = "D://text2.txt";
 
@@ -17,6 +26,14 @@ public class Phonebook {
         writeText(PATH_WRITE, str);
         str2 = getTex(PATH_WRITE);
         System.out.println(str2);
+    }
+
+    private static String changeText(String str) {
+        String res=str;
+        for(int i=0;i<pat.length-1;i+=2){
+            res=res.replaceAll(pat[i],pat[i+1]);
+        }
+        return res;
     }
 
     private static void writeText(String path, String text) {
